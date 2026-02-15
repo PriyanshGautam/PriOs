@@ -1,0 +1,46 @@
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.slider-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+}
+
+.slider-root {
+  flex: 1;
+  height: 20px;
+  cursor: pointer;
+}
+
+.slider-track-wrapper {
+  height: 100%;
+}
+
+.slider-track {
+  background-color: #ccc;
+  height: 6px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.slider-range {
+  background-color: #4caf50;
+  height: 100%;
+}
+
+.value-indicator {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #333;
+}

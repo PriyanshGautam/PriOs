@@ -1,0 +1,506 @@
+
+.mainbox {
+  width: 80vw;
+  height: 200px;
+  background: rgba(255,255,255, 1);
+  /* border: 2px solid #888; */
+  border-radius: 20px;
+  backdrop-filter: blur(3px);
+  resize: both;         /* Enable horizontal & vertical resize */
+  overflow: auto;       /* Prevent content overflow issues */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  top: 50px;
+  /* cursor: default !important; */
+  left: 80px;
+  display: flex;
+  /* transition: all 0.4s; */
+  /* transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+  /* transition-timing-function: cubic-bezier(0, 0.98, 0.29, 1.01); */
+  transition-timing-function: cubic-bezier(0, 0.98, 0.21, 1.23);
+}
+.left-mainBox{
+    width: 150px;
+    height: calc(100% - 20px);
+    border-right: 2px solid rgba(0, 0, 0, 0.04);
+    transition: all 0.4s;
+    
+    position: relative;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    background-color: #fafafa;
+    box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.15);
+    /* transform: scale(0.9); */
+    border-radius: 20px;
+}
+.right-mainBox{
+    width: calc(100% - 150px);
+    height: 100%;
+    background-color: rgba(255,255,255, 1);
+    transition: all 0.4s;
+    overflow: hidden;
+    /* cursor: default; */
+}
+.taskBar{
+    /* background-color: rgba(244, 244, 244, 0.879); */
+    position: relative;
+    z-index: 10;
+    /* backdrop-filter: blur(15px); */
+    /* filter: blur(2px); */
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(255,255,255,1) 70%, rgba(255, 255, 255, 0));
+    /* cursor: crosshair; */
+    justify-content: space-between;
+    /* border-bottom: 2px solid rgba(0, 0, 0, 0.1); */
+}
+.task_close{
+    margin-right: 15px;
+    color: #737373;
+    /* padding: 10px; */
+    padding-left: 8px;
+    padding-top: 3px;
+    border-radius: 5px;
+    padding-bottom: 3px;
+    padding-right: 8px;
+    /* background-color: #eeeeee; */
+    transition: all 0.4s;
+}
+.task_close:hover{
+    background-color: #e6e6e6;
+}
+
+.left_taskBox{
+  margin-right: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  margin-top: 0px;
+  padding-bottom: 4px;
+  border-radius: 400px;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  /* background: #333; */
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 1);
+  /* border: 1px solid rgba(0, 0, 0, 0.1); */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.08);
+  justify-content: center;
+}
+.left_taskBox img{
+  width: 20px;
+  height: 20px;
+  opacity: 0.7;
+  /* transition: all 0.3s; */
+}
+.left_taskBox:hover{
+  /* background-color: #e6e6e6; */
+  /* cursor: pointer; */
+}
+.mid_taskBar{
+    padding-left: 20px;
+    display: flex;
+    /* width: 500px; */
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 1;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+    /* background-color: aquamarine; */
+    height: 100%;
+}
+
+
+
+.mid_taskBar_content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 100%; */
+  /* height: 100%; */
+}
+#file_manager_heading{
+  font-size: 17px;
+  margin-top: 10px;
+  margin-left: 20px;
+  
+}
+
+.hideMenuBox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* padding-right: 20px; */
+  width: 100%;
+  height: 45px;
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  /* border-radius: 50%; */
+  /* cursor: pointer; */
+}
+.hideMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+.hideMenu img {
+  width: 15px;
+  height: 15px;
+  /* margin-right: 20px; */
+  opacity: 0.7;
+}
+
+#showMenuBox{
+  /* background-color: #737373; */
+  /* width: 40px; */
+  height: 30px;
+  width: 0px;
+  /* background-color: #555; */
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.08);
+  /* background-color: rgba(0, 0, 0, 0.05); */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  border-radius: 4px;
+  opacity: 0;
+  border-radius: 50%;
+  
+}
+#showMenuBox:hover{
+  background-color: rgba(0, 0, 0, 0.05);
+  /* cursor: pointer; */
+}
+#showMenuBox img{
+  width: 15px;
+  height: 15px;
+  opacity: 0.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.resize-handle {
+  width: 20px;
+  height: 20px;
+  background: #f4f4f4;
+  position: absolute;
+  right: 0;
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.381); */
+  bottom: 0;
+  cursor: none;
+  font-size: 1px;
+  /* border-right: 2px solid #111; */
+  /* border-bottom: 2px solid #111; */
+  /* margin: 2px; */
+  /* border-bottom-right-radius: 6px; */
+  /* border-radius: 50%; */
+  touch-action: none; /* Prevent scrolling while resizing */
+}
+.resize-text{
+  /* position: relative; */
+  /* bottom: 0; */
+  /* right: 0; */
+  font-size: 12px;
+  color: #555;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2px 5px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+@media screen and (max-width: 768px) {
+  .mainbox {
+    width: 100%;
+    height: 100%;
+    left: 30px;
+    top: 50px;
+  }
+  
+  /* .left-mainBox {
+    width: 100px;
+    height: auto;
+  }
+  .right-mainBox{
+    width: calc(100% - 100px);
+    overflow: hidden;
+  } */
+}
+
+.file-manager-content{
+  position: absolute;
+  top: 0;
+  /* padding-top: 20px; */
+  /* overflow-x: scroll; */
+  overflow-y: scroll;
+  /* background-color: aqua; */
+  height: 100%;
+  transition: all 0.4s;
+  /* background-color: #555; */
+  /* padding-bottom: 100px; */
+  /* z-index: 1; */
+}
+.file-manager-header{
+  /* font-size: 70px; */
+  margin-top: 50px;
+}
+
+.file-manager-header h2{
+  font-size: 24px;
+  /* margin: 0  40px; */
+  padding: 20px;
+  padding-left: 50px;
+  color: #333;
+}
+
+
+.ile_sideMenu_content{
+  /* padding: 1px; */
+}
+.file_side_menu_items{
+  /* background-color: antiquewhite; */
+  /* padding: 10px; */
+  padding-left: 10px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  font-size: 13px;
+  font-weight: 400;
+  border-radius: 10px;
+  /* margin: 10px; */
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  transition: all 0.1s;
+}
+.file_side_menu_items:hover{
+  background-color: rgba(0,0,0, 0.05);
+}
+
+.sideMenuItemHeading{
+  font-size: 11px;
+  font-weight: 600;
+  margin-left: 20px;
+  margin-top: 20px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+
+
+
+#file_manager_content{
+  margin-left: 50px;
+  /* width: 700px; */
+  /* height: 400px; */
+  overflow: wrap;
+  /* background-color: #f9f9f9; */
+  display: flex;
+  /* background-color: #333; */
+  flex-wrap: wrap;  
+  transition: all 0.1s;
+}
+#file_manager_content:active{
+  transform: scale(0.98);
+}
+
+
+.file_menu_item_icons{
+  height: 13px;
+  margin-right: 5px;
+  margin-top: 2px;
+}
+
+
+
+
+.file_manager_item_box{
+  width: 110px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* padding: 10px; */
+  /* height: 110px; */
+  border-radius: 10px;
+  /* background-color: aqua; */
+  /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4); */
+  transition: all 0.2s;
+  border: 1px solid rgba(0, 0, 0, 0);
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.file_manager_item_box:hover{
+  background-color: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+.file_manager_item_icon{
+  /* padding: 10px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: antiquewhite; */
+}
+.file_manager_item_icon img{
+  width: 80px;
+  border-radius: 5px;
+}
+.file_manager_item_text{
+  font-size: 13px;
+  display: flex;
+  /* padding-top: 5px; */
+  margin-top: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+} 
+
+
+
+#fileManagerOpenBox{
+  width: calc(100vw - 16px);
+  height: calc(100vh - 40px);
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(100px);
+  position: absolute;
+  display: none;
+
+  top: 30px;
+  z-index: 1000;
+  left: 8px;
+  overflow: hidden;
+}
+.openedBoxHeader{
+  width: 100%;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#headingOpenBox{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-left: 50px;
+}
+#closeOpenBoxBtn{
+  font-size: 14px;
+  color: #555;
+  margin-right: 50px;
+  padding: 10px;
+  /* background-color: rgba(255, 255, 255, 0.8); */
+}
+
+
+.openBoxContent{
+  display: flex;
+}
+.openBoxLeftSide{
+  width: 90%;
+  height: 100%;
+  background-color: rgba(255,255,255, 0.3);
+  overflow-y: scroll;
+  padding-bottom: 20px;
+  position: relative;
+  z-index: 100000;
+  /* display: flex; */
+}
+.openBoxLeftSide img{
+  width: 90%;
+  /* height: 100%; */
+  /* object-fit: cover; */
+  border-radius: 20px;
+  /* filter: blur(2px); */
+  transition: all 0.3s;
+  margin-left: 5%;
+  margin-top: 1%;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+/* .openBoxLeftSide::-webkit-scrollbar {
+  width: 8px;
+} */
+.openBoxRightSide{
+  width: 10%;
+  height: 100%;
+  /* background-color: rgba(255,255,255, 1); */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.itemOpenBoxRight{
+  width: 100%;
+  /* background-color: #333; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+.itemsOpenBox{
+  padding: 10px;
+  margin-top: 20px;
+}
+/* .itemOpenBox img{
+  width: 100px;
+} */
+.rightOpenBoxItemImage{
+  width: 80px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .openBoxContent{
+    /* width: 100%; */
+    /* height: 10%; */
+    display: block;
+  }
+  .openBoxLeftSide{
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    padding-bottom: 0px;
+  }
+  .openBoxRightSide{
+    width: 100%;
+    height: 10%;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+  }
+  
+}

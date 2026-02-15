@@ -1,0 +1,76 @@
+*{
+    user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;
+}
+.app-container{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: aqua; */
+}
+.app-box{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    /* height: 100vh; */
+    background-color: aqua;
+}
+.app-main-box{
+    width: 90%;
+    border-radius: 24px;
+    height: 80vh;
+    background-color: rgba(255,255,255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 50px rgba(0, 0, 0, 0.1);
+    /* margin-bottom: 10px; */
+}
+.app-bottom-box{
+    width: 90%;
+    height: 50px;
+    /* background-color: rgba(255,255,255, 0.5); */
+    /* backdrop-filter: blur(10px); */
+    border-radius: 24px;
+    /* position: absolute; */
+    /* bottom: 0px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* box-shadow: 0 2px 50px rgba(0, 0, 0, 0.1); */
+    font-family: Inter;
+    font-weight: 500;
+    /* margin-bottom: 10px; */
+    margin-top: 20px;
+}
+.app-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255,255,255, 0.2);
+    border: 1px solid rgba(0,0,0, 0.1);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    transition: all 0.4s ease-in-out;
+}
+
+.left-Button-Box{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* margin-left: 20px; */
+}

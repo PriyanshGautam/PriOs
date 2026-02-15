@@ -1,0 +1,22 @@
+.fullscreen-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.glass-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  font-weight: bold;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.glass-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}

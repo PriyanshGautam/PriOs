@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE/Edge */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+    overflow: -moz-scrollbars-none; /* Hide scrollbar in Firefox */
+    /* cursor: none; */
+    /* cursor: url('./assets/cursor.png'), auto; */
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    /* position: absolute; */
+    /* top: 0px; */
+    z-index: 1;
+    /* background-color: aqua; */
+}
+/* .text-box{
+    position: absolute;
+    bottom: 20vh;
+    font-family: Inter;
+    font-weight: 500;
+} */
+.background{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    /* opacity: 0.5; */
+    mix-blend-mode: difference;
+    z-index: -1;
+}
+/* .background-image{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+}   
+.background-image img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+} */
+
+.background-image {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* opacity: 0.4; */
+  /* filter: blur(12px); */
+}
+
+.background-image img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+}
+
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+  z-index: -2;
+  /* filter:  blur(10px); */
+  /* scale: 2; */
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.background-image img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+
