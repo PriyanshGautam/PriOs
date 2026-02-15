@@ -172,7 +172,7 @@ export default function FileManagerBox() {
         <div className="left-mainBox" id="leftBoxFileManager">
           <div className="hideMenuBox">
           <span className="hideMenu" onClick={hideMenu}>
-            <img src="/assets/hide_menu_icon.png" />
+            <img src="/assets/hide_menu_icon.png" alt="hide_menu" />
           </span>
           </div>
         </div>
