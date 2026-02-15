@@ -568,31 +568,31 @@ const startResizeSettings = (e) => {
         <div className="left-mainBox" id="leftBoxFileManager">
           <div className="hideMenuBox">
           <span className="hideMenu" onClick={hideMenu}>
-            <img src="/assets/hide_menu_icon.png" />
+            <img src="/assets/hide_menu_icon.png" alt="icon" />
           </span>
           </div>
 
           <div className="file_sideMenu_content">
             <div className="file_sideMenu_item">
               <div className='file_side_menu_items hover-target'>
-                <img src='/assets/fvrt_icon_file.png' className='file_menu_item_icons'/>
+                <img src='/assets/fvrt_icon_file.png' alt="icon" className='file_menu_item_icons'/>
                 Favorites</div>
               <div className='file_side_menu_items hover-target'>
-                <img src='/assets/recent_icon_file.png' className='file_menu_item_icons'/>
+                <img src='/assets/recent_icon_file.png' alt="icon" className='file_menu_item_icons'/>
                 Recents</div>
               <div className='sideMenuItemHeading'>Favorite</div>
               <div className='file_side_menu_items hover-target'>
-                <img src='/assets/apps_icon_file.png' className='file_menu_item_icons'/>
+                <img src='/assets/apps_icon_file.png' alt="icon" className='file_menu_item_icons'/>
               Applications</div>
               <div className='file_side_menu_items hover-target'>
-                <img src='/assets/documents_icon_file.png' className='file_menu_item_icons'/>
+                <img src='/assets/documents_icon_file.png' alt="icon" className='file_menu_item_icons'/>
               Documents</div>
               <div className='file_side_menu_items hover-target'>
-                <img src='/assets/photos_icon_file.png' className='file_menu_item_icons'/>
+                <img src='/assets/photos_icon_file.png' alt="icon" className='file_menu_item_icons'/>
               Images</div>
               <div className='sideMenuItemHeading'>Needed Things</div>
               <div className='file_side_menu_items hover-target'>
-                <img src='/assets/projects_icon_file.png' className='file_menu_item_icons'/>
+                <img src='/assets/projects_icon_file.png' alt="icon" className='file_menu_item_icons'/>
               Projects</div>
               </div>
             </div>
@@ -634,7 +634,7 @@ const startResizeSettings = (e) => {
 
                 <div className='file_manager_item_box hover-target' onclick={openResume}>
                   <div className='file_manager_item_icon' onclick={openResume}>
-                    <img src='/assets/document_blank.png'/>
+                    <img src='/assets/document_blank.png' alt="blank_doc"/>
                   </div>
                   <div className='file_manager_item_text'>
                     Resume.pdf
@@ -643,7 +643,7 @@ const startResizeSettings = (e) => {
                 
                 <div className='file_manager_item_box hover-target'>
                   <div className='file_manager_item_icon'>
-                    <img src='/assets/document_blank.png'/>
+                    <img src='/assets/document_blank.png' alt="blank_doc"/>
                   </div>
                   <div className='file_manager_item_text'>
                     Paper Presen.pdf
@@ -652,7 +652,7 @@ const startResizeSettings = (e) => {
                 
                 <div className='file_manager_item_box hover-target'>
                   <div className='file_manager_item_icon'>
-                    <img src='/assets/document_blank.png'/>
+                    <img src='/assets/document_blank.png' alt="blank_doc"/>
                   </div>
                   <div className='file_manager_item_text'>
                     Certificate2.pdf
@@ -661,7 +661,7 @@ const startResizeSettings = (e) => {
                 
                 <div className='file_manager_item_box hover-target'>
                   <div className='file_manager_item_icon'>
-                    <img src='/assets/document_blank.png'/>
+                    <img src='/assets/document_blank.png' alt="blank_doc"/>
                   </div>
                   <div className='file_manager_item_text'>
                     Resume.pdf
@@ -670,7 +670,7 @@ const startResizeSettings = (e) => {
                 
                 <div className='file_manager_item_box hover-target'>
                   <div className='file_manager_item_icon'>
-                    <img src='/assets/document_blank.png'/>
+                    <img src='/assets/document_blank.png' alt="blank_doc"/>
                   </div>
                   <div className='file_manager_item_text'>
                     Resume.pdf
@@ -679,7 +679,7 @@ const startResizeSettings = (e) => {
                 
                 <div className='file_manager_item_box hover-target'>
                   <div className='file_manager_item_icon'>
-                    <img src='/assets/document_blank.png'/>
+                    <img src='/assets/document_blank.png' alt="new_file"/>
                   </div>
                   <div className='file_manager_item_text'>
                     Resume.pdf
@@ -712,12 +712,12 @@ const startResizeSettings = (e) => {
 
         <div className='openBoxContent'>
         <div className='openBoxLeftSide'>
-              <img src='/assets/Resume.jpg' />
+              <img src='/assets/Resume.jpg' alt="resume"/>
         </div>
         <div className='openBoxRightSide'>
           <div className='itemOpenBoxRight'>
             <div className='itemsOpenBox'>
-              <img src='/assets/Resume.jpg' className='rightOpenBoxItemImage'/>
+              <img src='/assets/Resume.jpg' alt="resume" className='rightOpenBoxItemImage'/>
             </div>
           </div>
           </div>
